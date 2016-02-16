@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Hi Dave", Toast.LENGTH_LONG).show();
                 textView.setVisibility(View.VISIBLE);
+
                 textView.setText("Dave");
             }
         });
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         fab3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText("Hi Kristi");
+                textView.setText("This is a sentence");
                 Intent intent = new Intent(MainActivity.this, menu.class);
                 startActivity(intent);
             }
