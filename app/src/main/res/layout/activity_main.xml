@@ -18,21 +18,27 @@
         android:src="@android:drawable/ic_media_play" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_gravity="top|right"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_menu_today" />
-
-    <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="top |center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_help" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|left"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_delete" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_today" />
 
 </android.support.design.widget.CoordinatorLayout>

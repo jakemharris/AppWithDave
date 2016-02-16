@@ -1,5 +1,5 @@
 package com.example.jakeharris.floatingaction;
-
+/**/
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -22,12 +22,13 @@ public class MainActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
         final TextView textView = (TextView) findViewById(R.id.tvMaintext);
 
-
+        // initialize buttons
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.fab);
         FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab1);
         FloatingActionButton fab3 = (FloatingActionButton) findViewById(R.id.fab3);
 
-
+        // code buttons
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,20 +38,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Help button
+        fab1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setText("This is button 1");
+                Toast.makeText(MainActivity.this, "You just pushed Button 1", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, Help.class);
+                startActivity(intent);
+            }
+        });
+
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setVisibility(View.GONE);
+            }
+        });
+
         fab3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 textView.setText("Hi Kristi");
                 Intent intent = new Intent(MainActivity.this, menu.class);
                 startActivity(intent);
-
-
-            }
-        });
-        fab2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textView.setVisibility(View.GONE);
             }
         });
     }
