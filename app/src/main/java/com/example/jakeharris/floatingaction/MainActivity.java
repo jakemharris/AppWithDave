@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
         final TextView textView = (TextView) findViewById(R.id.tvMaintext);
 
-        // initialize buttons
+        // initialize buttons: Type declaration; object name; = (cast as type); identify which object;
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.fab);
-        FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab1);
+        FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.fab1);
+        FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab2);
         FloatingActionButton fab3 = (FloatingActionButton) findViewById(R.id.fab3);
 
         // code buttons
