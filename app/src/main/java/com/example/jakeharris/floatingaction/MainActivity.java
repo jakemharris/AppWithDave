@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Dave");
             }
         });
+// this is a comment
 
         // Help button
         fab1.setOnClickListener(new View.OnClickListener() {
